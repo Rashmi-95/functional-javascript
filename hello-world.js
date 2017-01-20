@@ -1,4 +1,4 @@
 function upperCase(inputString) {
-return inputString.upperCase;
+return inputString.toUpperCase();
 }
 console.log(upperCase('rashmi'));
