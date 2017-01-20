@@ -1,5 +1,5 @@
 function doubleAll(numbers) {
-      var doubleOfNumbers = numbers.map(function(number) {
+      var doubleOfNumbers = numbers.map(function doubleIt (number) {
           return number * 2;
       });
       return doubleOfNumbers;
