@@ -1,5 +1,5 @@
 function repeat(operation, num) {
-      for(int count = 0; count < num; count++) {
+      for(var count = 0; count < num; count++) {
           operation();
       }
 }
