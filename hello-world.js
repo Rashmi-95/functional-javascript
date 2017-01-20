@@ -1,4 +1,4 @@
-function upperCase(inputString) {
+function upperCaser(inputString) {
 return inputString.toUpperCase();
 }
-console.log(upperCase('rashmi'));
+module.exports = upperCaser('rashmi');
