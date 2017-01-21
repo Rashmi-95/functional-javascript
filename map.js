@@ -1,6 +1,6 @@
 function doubleAll(numbers) {
       var doubleOfNumbers = numbers.map(function doubleIt (number) {
-          return number * 2;
+          return number < 50;
       });
       return doubleOfNumbers;
 }
