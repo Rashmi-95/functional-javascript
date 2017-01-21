@@ -1,5 +1,5 @@
 function isMessageShort(element) {
-    return element.message < 50;
+    return element.message .length < 50;
 }
 
 function getShortMessages(message) {
