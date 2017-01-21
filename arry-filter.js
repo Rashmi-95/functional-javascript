@@ -4,7 +4,7 @@ function isMessageShort(element) {
 
 function getShortMessages(message) {
     var filteredMessage = message.filter(isMessageShort);
-    console.log(FilteredMessage)
+    //console.log(FilteredMessage)
     return Filteredmessage;
 }
 module.exports = getShortMessages;
