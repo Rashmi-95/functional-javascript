@@ -3,7 +3,8 @@ function isMessageShort(element) {
 }
 
 function getShortMessages(message) {
-    var Filteredmessage = message.filter(isMessageShort);
+    var filteredMessage = message.filter(isMessageShort);
+    console.log(FilteredMessage)
     return Filteredmessage;
 }
 module.exports = getShortMessages;
