@@ -1,4 +1,5 @@
 function isMessageShort(element) {
+    console.log(element.message.length);
     return element.message.length < 50;
 }
 
