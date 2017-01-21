@@ -1,9 +1,9 @@
 function isMessageShort(element) {
-    return element.message .length < 50;
+    return element.message.length < 50;
 }
 
-function getShortMessages(message) {
-    var filteredMessage = message.filter(isMessageShort);
+function getShortMessages(messages) {
+    var filteredMessage = messages.filter(isMessageShort);
     //console.log(FilteredMessage)
     return Filteredmessage;
 }
