@@ -1,26 +1,52 @@
-function checkUsersValid(goodUsers) {
+/*function checkUsersValid(goodUsers) {
     return function allUsersValid(submittedUsers) {
-        return submittedUsers.every(function checkEachUser(eachSubmittedUser) {
-            return goodUsers.some(function isGoodUser(eachGoodUser) {
-                return eachGoodUser.id === eachSubmittedUser.id;    
-            });
-        });
+        var submittedUserList = submittedUsers.every(checkEachUser(eachSubmittedUser));
+        return submittedUserList
     };
 }
 
-module.exports = checkUsersValid
+var checkEachUser = function (eachSubmittedUser) {
+    eachSubmittedUser.some( {
+        return eachGoodUser.id === eachSubmittedUser.id;
+    }) 
 
-/*
-function checkUsersValid(goodUsers) {
-    return function allUsersValid(submittedUsers) {
-
-        return goodUsers.filter(function isGoodUser(element) {
-                return submittedUsers.some(function isSubmittedUser(eachGoodUser) {
-                    return eachGoodUser === element;    
-                });  
-        });
-    };
+//     var isGoodUser = function (eachGoodUser, eachSubmittedUser) {
+    
+// }();
 }
 
 module.exports = checkUsersValid
 */
+
+/*
+function checkUsersValid(goodUsers) {
+    return function allUsersValid(submittedUsers) {
+        return submittedUsers.every(function checkEachUser(submittedUser) {
+            return goodUsers.some(function isGoodUser (goodUser) {
+                return goodUser.id === submittedUser.id
+            })
+        })
+    }
+}
+
+module.exports = checkUsersValid
+
+*/
+
+function isGoodUser(eachGoodUser) {
+    return eachGoodUser.id === eachSubmittedUser.id;
+}
+
+function checkEachUser(eachSubmittedUser) {
+    var goodUserList = goodUsers.some(isGoodUser());
+    return goodUserList;
+}
+
+function checkUsersValid(goodUsers) {
+    return function allUsersValid(submittedUsers) {
+        var submittedUserList = submittedUsers.every(checkEachUser());
+        return submittedUserList;
+    };
+}
+
+module.exports = checkUsersValid

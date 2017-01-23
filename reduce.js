@@ -1,12 +1,9 @@
 function countWords(inputWords) {  
-   return inputWords.reduce(function checkAndAdd(allWords,eachWord) {
-       if(eachWord in allWords) {
-        allWords[eachWord]++;
-       }else {
-           allWords[eachWord] = 1;
-       }
+   var outputWords = inputWords.reduce(function checkAndAdd(allWords,eachWord) {
+       (eachWord in allWords) ? (allWords[eachWord]++) : (allWords[eachWord] = 1);
        return allWords;
    },{});
+   return outputWords;
 }
 
 module.exports = countWords
