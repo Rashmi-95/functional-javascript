@@ -1,0 +1,15 @@
+{
+  "name": "functional-javascript",
+  "version": "1.0.0",
+  "description": "\"experiments\"",
+  "main": "application-with-bind.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rash-me",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
