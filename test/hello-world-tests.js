@@ -2,7 +2,7 @@ var chai = require('chai');
 var expect = chai.expect;
 var functionToUse = require('../hello-world.js');
 
-describe('check valid functionality of hello word', function () {
+describe('Ex 1 : check valid functionality of hello word', function () {
 
   it('convert to uppercase', function () {
     expect(functionToUse('hello world')).to.eqls('HELLO WORLD');

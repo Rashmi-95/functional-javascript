@@ -12,7 +12,7 @@ function doubleAll(numbers) {
         }
         return doubleOfNumbers;
     } else {
-        return 'Not a valid Array';
+        return 'Not an Array';
     }
 }
 

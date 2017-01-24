@@ -6,7 +6,7 @@ var operation1 = function () {
   console.log('hi');
 }
 
-describe('To check functionality of higher order function', function () {
+describe('Ex 2 :To check functionality of higher order function', function () {
 
   it('When given opertation and number is valid, shoud work as expected', function () {
     expect(functionToUse(operation1, 3)).to.eqls(console.log('hi'), console.log('hi'), console.log('hi'));
@@ -19,8 +19,13 @@ describe('To check functionality of higher order function', function () {
 });
 
 describe('To check functionality when given input is not valid', function () {
-
-  var operation2 = {
+/*
+  var operation2 = function () {
+    var
+      console.log('hi')
+  }
+*/
+  var operation3 = {
     message: 'hi'
   }
 
@@ -28,8 +33,12 @@ describe('To check functionality when given input is not valid', function () {
     expect(functionToUse()).to.eqls('Given operation is not valid function');
   });
 
+  it('When operation has an error in function, should throw error : not a valid function', function () {
+    expect(functionToUse(operation2 = function () { var x; console.log("hi")}, 6)).to.eqls('error in code');
+  });
+
   it('When operation is not a function, should throw error : not a valid operation', function () {
-    expect(functionToUse(operation2, 6)).to.eqls('Given operation is not valid function');
+    expect(functionToUse(operation3, 6)).to.eqls('Given operation is not valid function');
   });
 
   it('When num is not a number, should return error : not a valid number', function () {

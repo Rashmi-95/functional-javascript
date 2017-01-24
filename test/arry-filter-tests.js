@@ -1,7 +1,7 @@
 var chai = require('chai');
 var expect = chai.expect;
 var getShortMessages = require('../arry-filter.js');
-describe('To check functionality of Array filter', function () {
+describe('Ex 4 : To check functionality of Array filter', function () {
     var messagesTest1 = [
         {
             message: 'Welcome Chai.js and Mocha.js'
@@ -28,7 +28,7 @@ describe('To check functionality of Array filter', function () {
         expect(getShortMessages([])).to.eqls([]);
     });
 });
-describe('Input Related Testing', function () {
+describe('To check functionality for invalid input', function () {
 
     var error = 'Input is incorrect. It is supposed to be array of objects with message property';
     it('When input is not an array of objects, should return error message', function () {
