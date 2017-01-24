@@ -1,7 +1,7 @@
 var chai = require('chai');
 var expect = chai.expect;
 var getShortMessages = require('../arry-filter.js');
-describe('Main function', function () {
+describe('To check functionality of Array filter', function () {
     var messagesTest1 = [
         {
             message: 'Welcome Chai.js and Mocha.js'
@@ -18,20 +18,20 @@ describe('Main function', function () {
             message: 'Hello, I am new to javascript and it is a great language. I am enjoying learning it.'
         }
     ];
-    it('Check funcitonality', function () {
+    it('Check funcitonality of function, should return strings length < 50', function () {
         expect(getShortMessages(messagesTest1)).to.eqls(['Welcome Chai.js and Mocha.js']);
     });
-    it('When no message is less than 50 characters', function () {
+    it('When no message is less than 50 characters, should return empty Array', function () {
         expect(getShortMessages(messagesTest2)).to.eqls([]);
     });
-    it('Check when input is empty', function () {
+    it('Check when input is empty, should return empty Array', function () {
         expect(getShortMessages([])).to.eqls([]);
     });
 });
 describe('Input Related Testing', function () {
 
     var error = 'Input is incorrect. It is supposed to be array of objects with message property';
-    it('When input is not an array of objects', function () {
+    it('When input is not an array of objects, should return error message', function () {
         expect(getShortMessages('Hello Testing')).to.eqls(error);
     });
    /* it('when input is an arrray but not of objects', function () {
